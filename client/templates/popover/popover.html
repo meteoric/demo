@@ -1,13 +1,17 @@
 <template name="popover">
-  {{#ionHeaderBar class="bar-positive"}}
-    <a href="{{pathFor 'index'}}" class="button button-clear pull-left">
+  {{#contentFor "headerButtonLeft"}}
+    <a href="{{pathFor 'index'}}" class="button button-clear pull-left" data-nav-direction="reverse">
       {{> ionIcon icon='ios-arrow-back'}}
     </a>
+  {{/contentFor}}
+  {{#contentFor "headerTitle"}}
     <h1 class="title">Popover</h1>
+  {{/contentFor}}
+  {{#contentFor "headerButtonRight"}}
     <button class="button button-clear" data-ion-popover="_myPopover">
       {{> ionIcon icon='more'}}
     </button>
-  {{/ionHeaderBar}}
+  {{/contentFor}}
 
   {{#ionContent}}
     <div class="padding">

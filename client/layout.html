@@ -1,5 +1,17 @@
 <template name="layout">
   {{#ionBody}}
-    {{> yield}}
+
+    {{#ionHeaderBar class="bar-positive"}}
+      {{> yield "headerButtonLeft"}}
+      {{> yield "headerTitle"}}
+      {{> yield "headerButtonRight"}}
+    {{/ionHeaderBar}}
+
+    {{#if UI.contentBlock}}
+      {{> UI.contentBlock}}
+    {{else}}
+      {{> yield}}
+    {{/if}}
+
   {{/ionBody}}
 </template>

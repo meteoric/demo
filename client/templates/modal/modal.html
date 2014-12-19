@@ -1,10 +1,12 @@
 <template name="modal">
-  {{#ionHeaderBar class="bar-positive"}}
-    <a href="{{pathFor 'index'}}" class="button button-clear pull-left">
+  {{#contentFor "headerButtonLeft"}}
+    <a href="{{pathFor 'index'}}" class="button button-clear pull-left" data-nav-direction="reverse">
       {{> ionIcon icon='ios-arrow-back'}}
     </a>
+  {{/contentFor}}
+  {{#contentFor "headerTitle"}}
     <h1 class="title">Modal</h1>
-  {{/ionHeaderBar}}
+  {{/contentFor}}
 
   {{#ionContent}}
     <div class="padding">
