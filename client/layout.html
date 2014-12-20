@@ -7,11 +7,9 @@
       {{> yield "headerButtonRight"}}
     {{/ionHeaderBar}}
 
-    {{#if UI.contentBlock}}
-      {{> UI.contentBlock}}
-    {{else}}
+    {{#ionNavView animation="slide-ios"}}
       {{> yield}}
-    {{/if}}
+    {{/ionNavView}}
 
   {{/ionBody}}
 </template>

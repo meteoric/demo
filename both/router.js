@@ -1,5 +1,5 @@
 Router.configure({
-  layoutTemplate: 'navLayout'
+  layoutTemplate: 'layout'
 });
 
 Router.map(function() {
