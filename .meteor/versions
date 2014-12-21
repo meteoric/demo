@@ -44,7 +44,7 @@ logging@1.0.6
 meteor@1.1.4
 meteor-platform@1.2.1
 meteoric:autoform-ionic@0.1.0
-meteoric:ionic@0.1.1
+meteoric:ionic@0.1.2
 meteoric:ionic-sass@0.1.4
 meteoric:ionicons-sass@0.1.4
 minifiers@1.1.3
