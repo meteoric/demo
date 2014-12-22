@@ -1,6 +1,6 @@
 <template name="modal">
   {{#contentFor "headerButtonLeft"}}
-    <a href="{{pathFor 'index'}}" class="button button-clear pull-left" data-nav-direction="reverse">
+    <a href="{{pathFor 'index'}}" class="button button-clear pull-left" data-nav-direction="back">
       {{> ionIcon icon='ios-arrow-back'}}
     </a>
   {{/contentFor}}
@@ -8,10 +8,12 @@
     <h1 class="title">Modal</h1>
   {{/contentFor}}
 
-  {{#ionContent}}
-    <div class="padding">
-      <button class="button button-large button-stable" data-ion-modal="_myModal">Open Modal</button>
-    </div>
-  {{/ionContent}}
+  {{#ionView}}
+    {{#ionContent}}
+      <div class="padding">
+        <button class="button button-large button-stable" data-ion-modal="_myModal">Open Modal</button>
+      </div>
+    {{/ionContent}}
+  {{/ionView}}
 
 </template>

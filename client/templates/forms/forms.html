@@ -1,18 +1,20 @@
 <template name="forms">
   {{#contentFor "headerButtonLeft"}}
-    <a href="{{pathFor 'index'}}" class="button button-clear pull-left" data-nav-direction="reverse">
+    <a href="{{pathFor 'index'}}" class="button button-clear pull-left" data-nav-direction="back">
       {{> ionIcon icon='ios-arrow-back'}}
     </a>
   {{/contentFor}}
-  
+
   {{#contentFor "headerTitle"}}
     <h1 class="title">Forms</h1>
   {{/contentFor}}
 
-  {{#ionContent class="padding"}}
-    <p>
-      Forms use the <a href="https://github.com/meteoric/autoform-ionic" class="positive" target="_blank"><i>meteoric:autoform-ionic</i> package.</a>
-    </p>
-    <a href="https://github.com/meteoric/autoform-ionic" class="button button-positive" target="_blank">{{> ionIcon icon="social-github"}} View Repo</a>
-  {{/ionContent}}
+  {{#ionView}}
+    {{#ionContent class="padding"}}
+      <p>
+        Forms use the <a href="https://github.com/meteoric/autoform-ionic" class="positive" target="_blank"><i>meteoric:autoform-ionic</i> package.</a>
+      </p>
+      <a href="https://github.com/meteoric/autoform-ionic" class="button button-positive" target="_blank">{{> ionIcon icon="social-github"}} View Repo</a>
+    {{/ionContent}}
+  {{/ionView}}
 </template>

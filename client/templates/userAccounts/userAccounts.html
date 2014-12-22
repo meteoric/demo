@@ -8,10 +8,12 @@
     <h1 class="title">User Accounts</h1>
   {{/contentFor}}
 
-  {{#ionContent class="padding"}}
-    <p>
-      User accounts use the <a href="https://github.com/meteoric/useraccounts-ionic" class="positive" target="_blank"><i>useraccounts:ionic</i> package.</a>
-    </p>
-    <a href="https://github.com/meteoric/useraccounts-ionic" class="button button-positive" target="_blank">{{> ionIcon icon="social-github"}} View Repo</a>
-  {{/ionContent}}
+  {{#ionView}}
+    {{#ionContent class="padding"}}
+      <p>
+        User accounts use the <a href="https://github.com/meteoric/useraccounts-ionic" class="positive" target="_blank"><i>useraccounts:ionic</i> package.</a>
+      </p>
+      <a href="https://github.com/meteoric/useraccounts-ionic" class="button button-positive" target="_blank">{{> ionIcon icon="social-github"}} View Repo</a>
+    {{/ionContent}}
+  {{/ionView}}
 </template>

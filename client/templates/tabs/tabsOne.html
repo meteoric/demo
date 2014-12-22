@@ -1,9 +1,11 @@
 <template name="tabsOne">
-  {{> _tabsHeader}}
+  {{#ionView}}
+    {{> _tabsHeader}}
 
-  {{#ionContent class="padding"}}
-    <h1>Tab 1</h1>
-  {{/ionContent}}
+    {{#ionContent class="padding"}}
+      <h1>Tab 1</h1>
+    {{/ionContent}}
 
-  {{> _tabs}}
+    {{> _tabs}}
+  {{/ionView}}
 </template>

@@ -1,6 +1,6 @@
 <template name="loading">
   {{#contentFor "headerButtonLeft"}}
-    <a href="{{pathFor 'index'}}" class="button button-clear pull-left" data-nav-direction="reverse">
+    <a href="{{pathFor 'index'}}" class="button button-clear pull-left" data-nav-direction="back">
       {{> ionIcon icon='ios-arrow-back'}}
     </a>
   {{/contentFor}}
@@ -8,11 +8,13 @@
     <h1 class="title">Loading</h1>
   {{/contentFor}}
 
-  {{#ionContent}}
-    <div class="padding">
-      <button class="button button-large button-stable" data-action="showLoading">
-        Show Loading (3s)
-      </button>
-    </div>
-  {{/ionContent}}
+  {{#ionView}}
+    {{#ionContent}}
+      <div class="padding">
+        <button class="button button-large button-stable" data-action="showLoading">
+          Show Loading (3s)
+        </button>
+      </div>
+    {{/ionContent}}
+  {{/ionView}}
 </template>

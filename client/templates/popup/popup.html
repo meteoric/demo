@@ -1,6 +1,6 @@
 <template name="popup">
   {{#contentFor "headerButtonLeft"}}
-    <a href="{{pathFor 'index'}}" class="button button-clear pull-left" data-nav-direction="reverse">
+    <a href="{{pathFor 'index'}}" class="button button-clear pull-left" data-nav-direction="back">
       {{> ionIcon icon='ios-arrow-back'}}
     </a>
   {{/contentFor}}
@@ -8,20 +8,22 @@
     <h1 class="title">Popup</h1>
   {{/contentFor}}
 
-  {{#ionContent}}
-    <div class="padding">
-      <button class="button button-block button-stable" data-action="showPopup" onclick="alert('TODO')">
-        Show Popup
-      </button>
-      <button class="button button-block button-stable" data-action="showConfirm" onclick="alert('TODO')">
-        Show Confirm
-      </button>
-      <button class="button button-block button-stable" data-action="showAlert" onclick="alert('TODO')">
-        Show Alert
-      </button>
-      <button class="button button-block button-stable" data-action="showPrompt" onclick="alert('TODO')">
-        Show Prompt
-      </button>
-    </div>
-  {{/ionContent}}
+  {{#ionView}}
+    {{#ionContent}}
+      <div class="padding">
+        <button class="button button-block button-stable" data-action="showPopup" onclick="alert('TODO')">
+          Show Popup
+        </button>
+        <button class="button button-block button-stable" data-action="showConfirm" onclick="alert('TODO')">
+          Show Confirm
+        </button>
+        <button class="button button-block button-stable" data-action="showAlert" onclick="alert('TODO')">
+          Show Alert
+        </button>
+        <button class="button button-block button-stable" data-action="showPrompt" onclick="alert('TODO')">
+          Show Prompt
+        </button>
+      </div>
+    {{/ionContent}}
+  {{/ionView}}
 </template>

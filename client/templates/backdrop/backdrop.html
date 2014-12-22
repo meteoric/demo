@@ -1,6 +1,6 @@
 <template name="backdrop">
   {{#contentFor "headerButtonLeft"}}
-    <a href="{{pathFor 'index'}}" class="button button-clear pull-left" data-nav-direction="reverse">
+    <a href="{{pathFor 'index'}}" class="button button-clear pull-left" data-nav-direction="back">
       {{> ionIcon icon='ios-arrow-back'}}
     </a>
   {{/contentFor}}
@@ -9,11 +9,13 @@
     <h1 class="title">Backdrop</h1>
   {{/contentFor}}
 
-  {{#ionContent}}
-    <div class="padding">
-      <button class="button button-large button-stable" data-action="showBackdrop">
-        Show Backdrop (1s)
-      </button>
-    </div>
-  {{/ionContent}}
+  {{#ionView}}
+    {{#ionContent}}
+      <div class="padding">
+        <button class="button button-large button-stable" data-action="showBackdrop">
+          Show Backdrop (1s)
+        </button>
+      </div>
+    {{/ionContent}}
+  {{/ionView}}
 </template>
