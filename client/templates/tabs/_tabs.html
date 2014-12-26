@@ -1,20 +1,8 @@
 <template name="_tabs">
   {{#ionTabs}}
-    <a class="tab-item tab-item-positive {{ isActiveRoute regex='tabs.one' }}" href="{{ pathFor 'tabs.one' }}">
-      {{> ionIcon icon='ios-home'}}
-      Tab 1
-    </a>
-    <a class="tab-item tab-item-positive {{ isActiveRoute regex='tabs.two' }}" href="{{ pathFor 'tabs.two' }}">
-      {{> ionIcon icon='ios-star'}}
-      Tab 2
-    </a>
-    <a class="tab-item tab-item-positive {{ isActiveRoute regex='tabs.three' }}" href="{{ pathFor 'tabs.three' }}">
-      {{> ionIcon icon='ios-heart'}}
-      Tab 3
-    </a>
-    <a class="tab-item tab-item-positive {{ isActiveRoute regex='tabs.four' }}" href="{{ pathFor 'tabs.four' }}">
-      {{> ionIcon icon='ios-gear'}}
-      Tab 4
-    </a>
+    {{> ionTab title="Tab 1" path="tabs.one" iconOff="ios-home-outline" iconOn="ios-home"}}
+    {{> ionTab title="Tab 2" path="tabs.two" iconOff="ios-star-outline" iconOn="ios-star"}}
+    {{> ionTab title="Tab 3" path="tabs.three" iconOff="ios-heart-outline" iconOn="ios-heart"}}
+    {{> ionTab title="Tab 4" path="tabs.four" iconOff="ios-gear-outline" iconOn="ios-gear"}}
   {{/ionTabs}}
 </template>
