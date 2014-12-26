@@ -1,6 +1,6 @@
 <template name="navigation">
   {{#contentFor "headerButtonLeft"}}
-    {{> _backButton}}
+    {{>ionNavBackButton path="index"}}
   {{/contentFor}}
   {{#contentFor "headerTitle"}}
     <h1 class="title">Navigation</h1>
@@ -9,7 +9,7 @@
   {{#ionView}}
     {{#ionContent}}
       <div class="padding">
-        Coming Soon
+        <a href="{{pathFor 'navigation.one'}}" class="button button-stable">{{> ionIcon icon="ios-arrow-forward"}} Forward</a>
       </div>
     {{/ionContent}}
   {{/ionView}}

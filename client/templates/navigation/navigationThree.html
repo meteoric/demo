@@ -1,0 +1,16 @@
+<template name="navigationThree">
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton text="Level 2" path="navigation.two"}}
+  {{/contentFor}}
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Level 3</h1>
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent}}
+      <div class="padding">
+        <a href="{{pathFor 'navigation.two'}}" class="button button-stable" data-nav-direction="back">{{> ionIcon icon="ios-arrow-back"}} Back</a>
+      </div>
+    {{/ionContent}}
+  {{/ionView}}
+</template>

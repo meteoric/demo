@@ -12,6 +12,9 @@ Router.map(function() {
   this.route('loading');
   this.route('modal');
   this.route('navigation');
+  this.route('navigation.one', {path: '/navigation/one'});
+  this.route('navigation.two', {path: '/navigation/two'});
+  this.route('navigation.three', {path: '/navigation/three'});
   this.route('popover');
   this.route('popup');
   this.route('sideMenu');
