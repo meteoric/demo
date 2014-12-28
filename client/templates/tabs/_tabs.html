@@ -1,8 +1,17 @@
 <template name="_tabs">
-  {{#ionTabs}}
-    {{> ionTab title="Tab 1" path="tabs.one" iconOff="ios-home-outline" iconOn="ios-home"}}
-    {{> ionTab title="Tab 2" path="tabs.two" iconOff="ios-star-outline" iconOn="ios-star"}}
-    {{> ionTab title="Tab 3" path="tabs.three" iconOff="ios-heart-outline" iconOn="ios-heart"}}
-    {{> ionTab title="Tab 4" path="tabs.four" iconOff="ios-gear-outline" iconOn="ios-gear"}}
-  {{/ionTabs}}
+  {{#if isAndroid}}
+    {{#ionTabs style="android" class="tabs-background-positive tabs-color-light"}}
+      {{> ionTab title="Tab 1" path="tabs.one" iconOff="android-home" iconOn="android-home"}}
+      {{> ionTab title="Tab 2" path="tabs.two" iconOff="android-star" iconOn="android-star"}}
+      {{> ionTab title="Tab 3" path="tabs.three" iconOff="heart" iconOn="heart"}}
+      {{> ionTab title="Tab 4" path="tabs.four" iconOff="gear-b" iconOn="gear-b"}}
+    {{/ionTabs}}
+  {{else}}
+    {{#ionTabs style="ios"}}
+      {{> ionTab title="Tab 1" path="tabs.one" iconOff="ios-home-outline" iconOn="ios-home"}}
+      {{> ionTab title="Tab 2" path="tabs.two" iconOff="ios-star-outline" iconOn="ios-star"}}
+      {{> ionTab title="Tab 3" path="tabs.three" iconOff="ios-heart-outline" iconOn="ios-heart"}}
+      {{> ionTab title="Tab 4" path="tabs.four" iconOff="ios-gear-outline" iconOn="ios-gear"}}
+    {{/ionTabs}}
+  {{/if}}
 </template>
