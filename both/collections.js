@@ -3,7 +3,10 @@ Posts = new Mongo.Collection('posts');
 Posts.attachSchema(new SimpleSchema({
   title: {
     type: String,
-    max: 200
+    max: 200,
+    autoform: {
+      'label-type': 'stacked'
+    }
   },
   body: {
     type: String,
