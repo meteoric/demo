@@ -10,6 +10,10 @@ accounts-password
 fourseven:scss
 iron:router
 zimme:iron-router-active
+anti:fake
+matb33:collection-hooks
+aldeed:collection2
+aldeed:autoform
 meteoric:ionic-sass
 meteoric:ionicons-sass
 meteoric:ionic

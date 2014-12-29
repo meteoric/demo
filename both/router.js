@@ -15,7 +15,13 @@ Router.map(function() {
   this.route('index', {path: '/'});
   this.route('actionSheet');
   this.route('backdrop');
-  this.route('forms');
+  this.route('forms', {
+    data: function () {
+      return {
+        post: Posts.find().fetch()[0]
+      };
+    }
+  });
   this.route('headersFooters');
   this.route('lists');
   this.route('loading');

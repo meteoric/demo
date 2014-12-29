@@ -8,11 +8,8 @@
   {{/contentFor}}
 
   {{#ionView}}
-    {{#ionContent class="padding"}}
-      <p>
-        Forms use the <a href="https://github.com/meteoric/autoform-ionic" class="positive" target="_blank"><i>meteoric:autoform-ionic</i> package.</a>
-      </p>
-      <a href="https://github.com/meteoric/autoform-ionic" class="button button-positive" target="_blank">{{> ionIcon icon="social-github"}} View Repo</a>
+    {{#ionContent}}
+      {{> quickForm collection="Posts" doc=post id="edit-form" type="update" buttonContent="Save Post"}}
     {{/ionContent}}
   {{/ionView}}
 </template>
