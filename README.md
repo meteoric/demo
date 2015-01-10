@@ -11,3 +11,6 @@ This is a demo of the various [Meteoric](https://github.com/meteoric) packages:
 - [meteoric:useraccounts-ionic](https://github.com/meteoric/useraccounts-ionic)
 
 See it in action here: [meteoric.github.io](http://meteoric.github.io)
+
+## License
+[MIT License](https://github.com/meteoric/demo/blob/master/LICENSE)
