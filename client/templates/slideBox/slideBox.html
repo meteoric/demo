@@ -8,9 +8,17 @@
 
   {{#ionView}}
     {{#ionContent}}
-      <div class="padding">
-        Coming Soon
-      </div>
+      {{#ionSlideBox}}
+        {{#ionSlide class="light-bg"}}
+          <h3>Slide 1</h3>
+        {{/ionSlide}}
+        {{#ionSlide class="dark-bg"}}
+          <h3>Slide 2</h3>
+        {{/ionSlide}}
+        {{#ionSlide class="positive-bg"}}
+          <h3>Slide 3</h3>
+        {{/ionSlide}}
+      {{/ionSlideBox}}
     {{/ionContent}}
   {{/ionView}}
 </template>

@@ -9,8 +9,16 @@
   {{#ionView}}
     {{#ionContent}}
       <div class="padding">
-        <button class="button button-large button-stable" data-action="showLoading">
+        <button class="button button-large button-stable button-block" data-action="showLoading">
           Show Loading (3s)
+        </button>
+
+        <button class="button button-large button-stable button-block" data-action="showLoadingWithBackdrop">
+          Show Loading With Backdrop (3s)
+        </button>
+
+        <button class="button button-large button-stable button-block" data-action="showLoadingCustomTemplate">
+          Show Loading With Template (3s)
         </button>
       </div>
     {{/ionContent}}
