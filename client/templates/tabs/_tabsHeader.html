@@ -1,6 +1,13 @@
 <template name="_tabsHeader">
-  {{#ionHeaderBar class="bar-positive"}}
-    {{>ionNavBackButton path="index"}}
-    <h1 class="title">Tabs</h1>
-  {{/ionHeaderBar}}
+  {{#if isAndroid}}
+    {{#ionHeaderBar class="bar-positive has-tabs-top"}}
+      {{>ionNavBackButton path="index"}}
+        <h1 class="title">Tabs</h1>
+    {{/ionHeaderBar}}
+  {{else}}
+    {{#ionHeaderBar class="bar-positive"}}
+      {{>ionNavBackButton path="index"}}
+        <h1 class="title">Tabs</h1>
+    {{/ionHeaderBar}}
+  {{/if}}
 </template>
