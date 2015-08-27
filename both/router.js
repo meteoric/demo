@@ -34,6 +34,7 @@ Router.map(function() {
   this.route('popup');
   this.route('sideMenu');
   this.route('slideBox');
+  this.route('spinner');
   this.route('tabs.one', {path: '/tabs/one', layoutTemplate: 'tabsLayout'});
   this.route('tabs.two', {path: '/tabs/two', layoutTemplate: 'tabsLayout'});
   this.route('tabs.three', {path: '/tabs/three', layoutTemplate: 'tabsLayout'});

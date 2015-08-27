@@ -1,0 +1,44 @@
+<template name="spinner">
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton path="index"}}
+  {{/contentFor}}
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Spinner</h1>
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent}}
+      <div class="padding">
+        <h4>iOS</h4>
+        {{> ionSpinner icon="ios"}}
+
+        <h4>iOS Small</h4>
+        {{> ionSpinner icon="ios-small"}}
+
+        <h4>Android</h4>
+        {{> ionSpinner icon="android"}}
+
+        <h4>Bubbles</h4>
+        {{> ionSpinner icon="bubbles"}}
+
+        <h4>Circles</h4>
+        {{> ionSpinner icon="circles"}}
+
+        <h4>Crescent</h4>
+        {{> ionSpinner icon="crescent"}}
+
+        <h4>Dots</h4>
+        {{> ionSpinner icon="dots"}}
+
+        <h4>Lines</h4>
+        {{> ionSpinner icon="lines"}}
+
+        <h4>Ripple</h4>
+        {{> ionSpinner icon="ripple"}}
+
+        <h4>Spiral</h4>
+        {{> ionSpinner icon="spiral"}}
+      </div>
+    {{/ionContent}}
+  {{/ionView}}
+</template>
